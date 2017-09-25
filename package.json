@@ -1,0 +1,22 @@
+{
+  "name": "mvp-z",
+  "version": "1.0.0",
+  "description": "\"I do n't know \"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abeer-shami/MVP-FIRSTPROJECT.git"
+  },
+  "author": "abeer=shami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abeer-shami/MVP-FIRSTPROJECT/issues"
+  },
+  "homepage": "https://github.com/abeer-shami/MVP-FIRSTPROJECT#readme",
+  "dependencies": {
+    "express": "^4.15.5"
+  }
+}
