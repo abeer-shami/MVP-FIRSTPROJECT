@@ -1,0 +1,39 @@
+
+<html ng-app="app">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	</head>
+	<body>
+		<script src="node_modules/angular/angular.js"></script>
+
+			<h1>Contact List</h1>
+
+				<div class="App-container" ng-controller="AppCtrl">
+					<table class="table">
+					<thead>
+					<tr>
+					<th> name <input ng-model="$ctrl.name" class="form-control" type="text"/></th>
+					<th> last <input ng-model="$ctrl.last" class="form-control" type="text"/></th>
+					<th>phone<input  ng-model="$ctrl.phone" class="form-control" type="text"/></th>
+					<th>email <input ng-model="$ctrl.email" class="form-control" type="text"/></th>
+					<th><button class="btn" ng-click="$ctrl.Submit()">SUBMIT</th>
+							</tr>
+
+				<tr contact='contact' ng-repeat="contact in $ctrl.contactlist">
+
+					<td>{{$ctrl.contact.name}}</td>
+          			<td>{{$ctrl.contact.last}}</td>
+          			<td>{{$ctrl.contact.number}}</td>
+          	    	<td>{{$ctrl.contact.email}}</td>
+
+					</tr>
+					</thead>
+					</table>
+				</div>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+		<script src="controller.js"></script>
+	</body>
+</html>
